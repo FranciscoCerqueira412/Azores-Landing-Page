@@ -71,12 +71,14 @@ nav .account :nth-child(n):hover{
 }
 .hero{
     width:100%;
+    max-height: 80vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 3rem 3rem;
     top: 5rem;
+    z-index: 1000;
 }
 .hero .follow{
     display: flex;
@@ -343,6 +345,23 @@ footer{
     }
     .azr p{
         margin-bottom: 10rem;
+    }
+
+}
+@media screen and (max-width: 730px) and (max-height:440px) {
+    .hero .main__content p{
+        font-size: 0.8rem;
+    }
+    .hero .main__content h1{
+        font-size: 1.5rem;
+        padding: 0;
+    }
+    .hero .main__content span{
+        font-size: 1rem;
+    }
+
+    main{
+        padding-top: 3rem;
     }
 
 }
