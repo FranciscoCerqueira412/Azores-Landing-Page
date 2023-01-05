@@ -1,0 +1,348 @@
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold?styles=20876,20877,20878,20879,20880');
+@import url('https://fonts.cdnfonts.com/css/chronicle-display?styles=67778,67779,67780,67777');
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    letter-spacing: 0.05rem;
+    scroll-behavior: smooth;
+
+}
+a{
+    color: white;
+
+}
+header{
+    height: 100vh;
+    background: linear-gradient(340deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 108.93%),url(images/1.jpg),url(images/top-bg.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.container{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+nav{
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    display: flex;
+    gap: 0.5rem;
+}
+nav h3{
+    color: white;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    font-family: 'Chronicle Display', sans-serif;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+nav ul li{
+    padding: 0rem 1rem;
+    font-family: 'Gilroy-Medium', sans-serif;
+}
+nav ul li a:hover{   
+    color: rgb(46, 46, 46);
+}
+nav .account{
+    color: white;
+    font-family: 'Gilroy-Medium', sans-serif;
+}
+nav .account :nth-child(n):hover{
+    color: rgb(46, 46, 46);
+}
+.hero{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 3rem;
+    top: 5rem;
+}
+.hero .follow{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 1rem;
+    font-size: 1.1rem;
+    font-family: 'Gilroy', sans-serif;
+}
+.hero .follow p{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    letter-spacing: 0.03rem;
+    
+}
+.hero .follow i{   
+    cursor: pointer;
+}
+.hero .follow i:hover{   
+    color: rgb(44, 44, 44);
+}
+.hero .main__content{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+.hero .main__content p{
+    color: #FBD784;
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+.hero .main__content h1{
+    font-family: 'Chronicle Display', sans-serif;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 3rem;
+    padding: 2rem 0rem;
+
+}
+.hero .main__content span{
+    font-family: 'Gilroy', sans-serif;
+
+}
+
+.hero .witch__page{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.6rem;
+    color: white;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+}
+.witch__page a:first-child{
+    color: rgb(75, 75, 75);
+    
+}
+
+.witch__page a:hover{
+    color: rgb(75, 75, 75);
+    
+    
+}
+.fade{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    
+    background: linear-gradient(180deg, rgba(11,29,38,0) 17%, rgba(11,29,38,0.7) 44%, rgba(11,29,38,0.8) 50%, rgba(11,29,38,0.9) 57%, rgba(11,29,38,0.95) 65%, rgba(11,29,38,0.97) 72%, rgba(11,29,38,0.9861694677871149) 75%, #0b1d26 80%);
+}
+main{
+    background-color: #0B1D26;
+}
+.item__container{
+
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+.item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+.item:nth-child(even){
+    flex-direction: row-reverse;
+
+}
+
+.item .number__item{
+    position: absolute;
+    top: -3rem;
+    left: 1rem;
+    font-size: 6rem;
+    color: white;
+    opacity: 0.1;
+    font-weight: 700;
+    
+}
+.item .text{
+    color: white;
+    padding: 0rem 2rem 0rem 3rem;
+
+}
+.item img{
+    width: 40vw;
+    border-radius: 10px;
+}
+.item:nth-child(7){
+    margin-bottom: 0;
+}
+.text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.text p{
+    color: #FBD784;
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 0.8rem;
+}
+.text a{
+    color: #FBD784;
+    text-decoration: none;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 0.8rem;
+}
+.text p{
+    margin-bottom: 1rem;
+}
+.text h2{
+    margin-bottom: 1rem;
+    font-family: 'Chronicle Display', sans-serif;
+    font-size: 3rem;
+}
+.text span{
+    margin-bottom: 1rem;
+    font-family: 'Gilroy', sans-serif;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0B1D26;
+    padding: 5rem 5rem 3rem 5rem;
+
+
+}
+.azr{
+    margin-right: 3rem;
+}
+.azr h3{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    font-family: 'Chronicle Display', sans-serif;
+    margin-bottom: 1rem;
+}
+.azr p{
+    font-family: 'Gilroy', sans-serif;
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-bottom: 4rem;
+}
+.azr span{
+    font-family: 'Gilroy', sans-serif;
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.7rem;
+
+}
+.more h3{
+    color: #FBD784;
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+
+}
+.more{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 60%;
+    
+}
+
+.more ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+.more li{
+    width: 100%;
+}
+
+::-webkit-scrollbar{
+    width: 1.2rem;
+}
+::-webkit-scrollbar-track{
+    background-color: #133342;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #FBD784;
+    border-radius: 1rem;
+    border: .2rem solid #133342;
+}
+
+@media screen and (max-width:730px) {
+    .item{
+        flex-direction: column;
+    }
+    .item:nth-child(even){
+        flex-direction: column;
+    
+    }
+    .item img{
+        width: 90%;
+        padding-top: 2rem;
+
+    }
+    nav .account{
+        display: none;
+    }
+    nav{
+        padding: 1rem 1rem;
+        justify-content: space-between;
+    }
+    .hero .witch__page{
+        display: none;
+    }
+    .more{
+        flex-direction: column;
+    }
+    .more .lista1:first-child{
+        padding-bottom: 3rem;
+    }
+    .azr p{
+        margin-bottom: 10rem;
+    }
+
+}
