@@ -19,7 +19,7 @@ a{
 header{
     height: 100vh;
     background: linear-gradient(340deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 108.93%),url(images/1.jpg); 
-    background-size: cover center;
+    background-size: cover 100vh;
     background-repeat: no-repeat;
     background-position: center;
 
